@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header-first {
+  width: 100%;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #179c61;
+}
+.header-first ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: square;
+}
+.header-first ul li {
+  margin-right: 5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header-second {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-second .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.header-second .logo img {
+  height: 10rem;
+  cursor: pointer;
+}
+.header-second .navigation-links {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+.header-second .navigation-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header-second .navigation-links ul li {
+  position: relative;
+}
+.header-second .navigation-links ul li ul {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 2rem;
+  z-index: 10;
+  width: 25rem;
+  -webkit-transform: translate(9%, 0);
+          transform: translate(9%, 0);
+  background: #179c61;
+}
+.header-second .navigation-links ul li ul li {
+  color: white;
+  text-align: left;
+  width: 25rem;
+  -webkit-transform: translate(-4%, 0);
+          transform: translate(-4%, 0);
+  height: 5rem;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+.header-second .navigation-links ul li ul li:hover {
+  background-color: #333333;
+}
+.header-second .navigation-links ul li ul li a {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.header-second .navigation-links ul li:hover > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -2.5em;
+  /*box-shadow: 5px 5px 5px gray;*/
+  margin-bottom: 4px;
+}
+.header-second .appointment-btn {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  width: 8rem;
+  height: 5rem;
+  margin-left: 4rem;
+  margin-right: 3rem;
+  color: white;
+  background-color: #179c61;
+  border: none;
+  font-size: 1.3rem;
+  display: block;
+}
+.header-second .appointment-btn:hover {
+  background-color: #333333;
+}
+
+.carousel-item {
+  height: 60vh;
+  width: 100%;
+  background-color: #333333;
+  position: relative;
+}
+.carousel-item:nth-of-type(1) {
+  background-image: url("../images/aircraft-1813731.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:nth-of-type(2) {
+  background-image: url("../images/aircraft-5336532.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:nth-of-type(3) {
+  background-image: url("../images/pepper-5501218.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item .container {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  margin-bottom: 2rem;
+  color: white;
+  max-width: 50%;
+  background: rgba(0, 0, 0, 0.411);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.carousel-item .container h1 {
+  font-size: 3rem;
+}
+.carousel-item .container p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.carousel-item .container .btn {
+  background-color: #179c61;
+  padding: 1rem;
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.li:hover {
+  background: #333333;
+}
+
+.tickets {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transform: translate(0, -30%);
+          transform: translate(0, -30%);
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ticket {
+  text-decoration: none;
+  background-color: #179c61;
+  color: white;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 1.5rem;
+}
+.ticket:hover {
+  color: white;
+}
+.ticket img {
+  border: 1px solid white;
+  height: 5rem;
+  width: 5rem;
+}
+.ticket h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.story {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  height: 50rem;
+  margin: 0 auto;
+}
+.story .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("../images/horse-5628881.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem;
+}
+.story .content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.story .content h2 {
+  font-size: 2rem;
+  color: #179c61;
+}
+.story .content h1 {
+  font-size: 3.5rem;
+  color: #333333;
+}
+.story .content p {
+  font-size: 1.5rem;
+  color: #2c2c2c;
+}
+.story .content ul {
+  list-style-type: square;
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  border-left: 4px solid #179c61;
+}
+.story .content button {
+  background-color: #179c61;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.story .content button:hover {
+  background-color: #333333;
+}/*# sourceMappingURL=index.css.map */
