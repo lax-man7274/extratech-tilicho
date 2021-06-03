@@ -14,6 +14,10 @@
 
     <link rel="icon" href="" />
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <link rel="stylesheet" href="./font-awesome-4.7.0/js/js/all.js"> -->
+    <script defer src="./fontawesome-free-5.15.3-web/js/all.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,6 +28,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script defer src="/fontawesome/js/all.js"></script>
 
     <title>Tilicho Consulting Group</title>
   </head>
@@ -39,14 +50,16 @@
           </li>
         </ul>
       </div>
-      <div class="header-second">
+      <div class="header-second" id="navbar">
         <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
-        <div class="navigation-links">
+        <div class="burger"><img src="./images/burger.png" alt="burger" /></div>
+
+        <div class="burger-slide" id="burger">
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About Us</a></li>
             <li>
-              Education
+              <a href="#">Education</a>
               <ul>
                 <li class="li"><a href="#">Study in Australia</a></li>
                 <li class="li"><a href="#">Study in Canada</a></li>
@@ -54,7 +67,7 @@
               </ul>
             </li>
             <li>
-              Visa & Migration
+              <a href="#">Visa & Migration</a>
               <ul>
                 <li><a href="#">Student Visa</a></li>
                 <li><a href="#">Temporary Graduate Visa</a></li>
@@ -64,7 +77,8 @@
               </ul>
             </li>
             <li>
-              Other Services
+              <a href="#">Other Services</a>
+
               <ul>
                 <li><a href="#">Health Insurence</a></li>
                 <li>
@@ -73,10 +87,49 @@
                 <li><a href="#">IELTS/PTE/NAATI Prepiration</a></li>
               </ul>
             </li>
-            <li>Gallary</li>
-            <li>News</li>
-            <li>Testimonials</li>
-            <li>Contact Us</li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navigation-links">
+          <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Education</a>
+              <ul>
+                <li class="li"><a href="#">Study in Australia</a></li>
+                <li class="li"><a href="#">Study in Canada</a></li>
+                <li class="li"><a href="#">Study in UK</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Visa & Migration</a>
+              <ul>
+                <li><a href="#">Student Visa</a></li>
+                <li><a href="#">Temporary Graduate Visa</a></li>
+                <li><a href="#">Skilled Visa</a></li>
+                <li><a href="#">Visitio Visa</a></li>
+                <li><a href="#">Global Talent Visa</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Other Services</a>
+
+              <ul>
+                <li><a href="#">Health Insurence</a></li>
+                <li>
+                  <a href="#">Professional year(IT/Enginerring/Accounting)</a>
+                </li>
+                <li><a href="#">IELTS/PTE/NAATI Prepiration</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
         <button type="button" class="appointment-btn">BOOK APPOINTMENT</button>
@@ -87,7 +140,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <h1 class="animate__animated animate__backInLeft">
+            <h1 class="animate__animated animate__backInLeft animate__delay-1s">
               Guiding you to become a Global Citizen--1
             </h1>
             <p class="animate__animated animate__backInRight animate__delay-1s">
@@ -160,24 +213,24 @@
     <div class="tickets">
       <a href="" class="ticket"
         ><img src="./images/aircraft-1813731.jpg" alt="icon" />
-        <h2>University and Enrollment</h2></a
-      >
+        <h2>University and Enrollment</h2>
+      </a>
       <a href="" class="ticket"
         ><img src="./images/aircraft-5336532.jpg" alt="icon" />
-        <h2>University and Enrollment</h2></a
-      >
+        <h2>University and Enrollment</h2>
+      </a>
       <a href="" class="ticket"
         ><img src="./images/pepper-5501218.jpg" alt="icon" />
-        <h2>University and Enrollment</h2></a
-      >
+        <h2>University and Enrollment</h2>
+      </a>
       <a href="" class="ticket"
         ><img src="./images/aircraft-1813731.jpg" alt="icon" />
-        <h2>University and Enrollment</h2></a
-      >
+        <h2>University and Enrollment</h2>
+      </a>
       <a href="" class="ticket"
         ><img src="./images/aircraft-5336532.jpg" alt="icon" />
-        <h2>University and Enrollment</h2></a
-      >
+        <h2>University and Enrollment</h2>
+      </a>
     </div>
 
     <div class="story">
@@ -197,16 +250,379 @@
           expert team,<b>we will guide you to become a global citizen.</b>
         </p>
         <ul>
-            <li>Registered Migration Agents</li>
-            <li>Qualified Education Agent Counsellor</li>
-            <li>University Lecturers</li>
-            <li>Engineers</li>
-            <li>CPAs</li>
-            <li>IT Professionals</li>
+          <li>Registered Migration Agents</li>
+          <li>Qualified Education Agent Counsellor</li>
+          <li>University Lecturers</li>
+          <li>Engineers</li>
+          <li>CPAs</li>
+          <li>IT Professionals</li>
         </ul>
-        <button type="button" class=" btn btn-primary">About Us -></button>
+        <button type="button" class="btn btn-primary">About Us -></button>
       </div>
     </div>
+
+    <div class="countries">
+      <div class="title">
+        <h2>Choose your Destination Country</h2>
+        <h1>CHOOSE YOUR COUNTRY</h1>
+      </div>
+      <div class="country">
+        <div class="nation">
+          <div class="content">
+            <h1>Canada</h1>
+            <p>
+              Canada is one of the popular destinations for international
+              students. Canada welcomes over 150,000 students each year and is
+              ranked highest for quality of life and safety for international
+              students.
+            </p>
+          </div>
+        </div>
+        <div class="nation">
+          <div class="content">
+            <h1>Australia</h1>
+            <p>
+              Australia is a popular destination for international students from
+              around the world. It has a welcoming policy for international
+              students and offers quality education through its more than 1100
+              education providers which offer more than 22,000 courses.
+              Australian universities are ranked higher in the world University
+              ranking. 8 of 43 Australian Universities rank in the top 100
+              universities in the world.
+            </p>
+          </div>
+        </div>
+        <div class="nation">
+          <div class="content">
+            <h1>UK</h1>
+            <p>
+              With many world class Degrees on offer, the UK is one of the prime
+              destinations for International students. Education in the UK means
+              your doors are open for the entire globe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="consultation">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="image"></div>
+      <div class="content">
+        <h1>FREE CONSULTATION</h1>
+        <p>
+          Book a free initial consultation appointment with our Registered
+          Migration Agents and Qualified Education Agent Counselors to plan your
+          career and explore your visa options
+        </p>
+        <button type="button">BOOk AN APPOINTMENT</button>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="head">
+        <h2>WHAT WE OFFER</h2>
+        <h1>OUR SERVICES</h1>
+        <p>
+          Tilicho Consulting Group aims to provide One Stop Solution to your
+          Education & Visa requirements. We will be there to assist you
+          throughout your journey to your preferred destination.
+        </p>
+      </div>
+      <div class="service">
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>University and College Admission</h1>
+          <p>
+            Choosing an Educational Institution can be a daunting task
+            considering the availability of thousands of Universities and
+            Colleges in your preferred destinations. You need to consider
+            various factors such as credibility of Educational institutions,
+            recognition from the governing authorities, cost of the course,
+            Eligibility requirements , career outcome and possible Migration
+            pathways. We have a team of Expert Educational Counselors and
+            Registered Migration Agents who can help you to choose the right
+            course, institution and the Location based on your requirements and
+            eligibility.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>Migration and Visa Services</h1>
+          <p>
+            Tilicho Consulting Group is an Australian Visa and Migration
+            Consultancy firm led by experienced Registered Migration Agents who
+            have experience in assisting thousands of clients for their desired
+            visa and migration goals in Australia.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>Professional Year (PY) Programs</h1>
+          <p>
+            The Professional Year program is a Job-ready program designed for
+            graduates. There are three streams in the Professional Year program.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>Internship facilitation</h1>
+          <p>
+            At Tilicho Consulting Group we are committed to help our clients
+            achieve their career goals. We have collaborated with various
+            organizations to help our clients to join training and internship
+            programs which will help them to pursue the career of their choice.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>English Preparation Classes: IELTS and PTE</h1>
+          <p>
+            English language tests are mandatory requirements for the majority
+            of visa applicants. They play a critical role in a point-based
+            migration system to meet the par score to be eligible or have a high
+            point to have a chance to get the invitation.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./images/milk-5267300.jpg" alt="icon" />
+          <h1>Health Insurance: OSHC and OVHC</h1>
+          <p>
+            As an Australian temporary visa holder you should consider taking
+            out appropriate Health Insurance. It might be one of the mandatory
+            requirements attached to your visa conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="founders">
+      <div class="head">
+        <h1>CO-FOUNDERS</h1>
+        <p>
+          Tilicho Consulting Group was co-founded by three brothers Prakash,
+          Pradeep and Pratap Panthee with combined industry experience of 20+
+          years in Sydney Australia.
+        </p>
+      </div>
+      <div class="founder">
+        <div class="person">
+          <img src="./images/pepper-5501218.jpg" alt="" />
+          <h1>Prakash Panthee</h1>
+          <h2>Registered Migration Agent</h2>
+          <h2>MARN: 1575935</h2>
+        </div>
+        <div class="person">
+          <img src="./images/pepper-5501218.jpg" alt="" />
+          <h1>Pradeep Panthee</h1>
+          <h2>CPA(Australia)</h2>
+        </div>
+        <div class="person">
+          <img src="./images/pepper-5501218.jpg" alt="" />
+          <h1>Pratap Panthee</h1>
+          <h2>Registered Migration Agent</h2>
+          <h2>MARN: 2016351</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="head">
+        <h2>TESTIMONIALS</h2>
+        <h1>HAPPY CLIENTS</h1>
+        <div class="dbl-cotation">"</div>
+      </div>
+
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+          <li data-target="#myCarousel2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container my-container">
+              <p>
+                I had an amazing experience lodging my 485 visa through Tilicho
+                Consultancy. As the thought of extending the visa was stressing
+                me out, and I had no idea what I was supposed to do next.
+                Tilicho Team did a very good job and helped me out to clear all
+                my doubts and concerns. I praise their good service and hard
+                work - recommend everyone to try out their services.
+              </p>
+              <div class="customer">
+                <img src="" alt="Customer image" />
+                <div class="info">
+                  <h1>Kuljit Diwedi--1</h1>
+                  <h2>Customer</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container my-container">
+              <p>
+                I had an amazing experience lodging my 485 visa through Tilicho
+                Consultancy. As the thought of extending the visa was stressing
+                me out, and I had no idea what I was supposed to do next.
+                Tilicho Team did a very good job and helped me out to clear all
+                my doubts and concerns. I praise their good service and hard
+                work - recommend everyone to try out their services
+              </p>
+              <div class="customer">
+                <img src="" alt="Customer image" />
+                <div class="info">
+                  <h1>Arich Basnet</h1>
+                  <h2>Customer</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container my-container">
+              <p>
+                I had an amazing experience lodging my 485 visa through Tilicho
+                Consultancy. As the thought of extending the visa was stressing
+                me out, and I had no idea what I was supposed to do next.
+                Tilicho Team did a very good job and helped me out to clear all
+                my doubts and concerns. I praise their good service and hard
+                work - recommend everyone to try out their services.
+              </p>
+              <div class="customer">
+                <img src="" alt="Customer image" />
+                <div class="info">
+                  <h1>Suman Bhandari</h1>
+                  <h2>Customer</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel2"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon arrow"
+            aria-hidden="true"
+          ></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel2"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon arrow"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="bottom-content">
+      <div class="container">
+        <div class="text-wrapper">
+          <p>Looking for an Authentic Visa Consulting ?</p>
+        </div>
+        <div class="button-container">
+          <button>Book Appointment</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="top-footer">
+        <div class="container">
+          <div class="description">
+            <div class="logo-container">
+              <img src="./images/tilicho-footer.png" alt="" />
+            </div>
+            <p>
+              Tilicho Consulting Group is a team of professionals consisting of
+              Australian Registered Migration Agents, Qualified Education
+              Counselors, University Lecturers, Engineers, CPAs and IT
+              Professionals. We aim to provide world class service in the field
+              of International Education, Migration and Career Counseling. With
+              our Expert Team We will guide you to become a Global Citizen.
+            </p>
+          </div>
+          <div class="official-info">
+            <h3>OFFICIAL INFO</h3>
+            <ul class="contact-section">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="phoneto:+61285925506">+61 2 8592 5506</a>
+              </li>
+              <li><i class="fas fa-fax"></i> 1300 84 54 24</li>
+              <li>
+                <i class="fas fa-envelope-open"></i
+                ><a href="mailto:info@tilicho.com.au"> info@tilicho.com.au</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Suite 1003, Level 10 , 46
+                Market Street Sydney NSW 2000 Australia
+              </li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Subscribe our newsletter to get our latest update &amp; news</p>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your mail address"
+                  name="email"
+                  required
+                />
+                <button type="submit" name="subscribes" class="btn">
+                  <i class="fa fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <div class="social-detail">
+              <ul>
+                <li>
+                  <a href="#" target="_blanks"
+                    ><i class="fab fa-facebook-f icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blanks"
+                    ><i class="fab fa-youtube icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blanks"
+                    ><i class="fab fa-instagram icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blanks"
+                    ><i class="fab fa-tiktok icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p class="copyright">
+          © 2021-Tilicho Consulting Group. All rights reserved. MARN : 1575935 /
+          2016351
+          <a href="#" target="_blanks"> Code of Conduct</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/burger.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
